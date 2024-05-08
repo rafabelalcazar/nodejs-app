@@ -1,0 +1,13 @@
+name: test
+
+on:
+    push:
+        branches:
+        - "main"
+
+jobs:
+    test_ads:
+        runs-on: ubuntu-18.04
+        steps:
+            - name: Show message
+              run: echo "Hello world"
