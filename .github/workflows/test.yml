@@ -5,6 +5,9 @@ on:
         branches:
         - "main"
 
+env:
+  USER_REPOSITORY: Rafael
+
 jobs:
     test_ads:
         runs-on: ubuntu-20.04
@@ -14,3 +17,6 @@ jobs:
 
             - name: Show secret
               run: echo ${{secrets.ENVIROMENT}}
+
+            - name: Show variable in file
+              run: echo ${{env.USER_REPOSITORY}}
