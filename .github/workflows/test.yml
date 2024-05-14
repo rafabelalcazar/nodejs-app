@@ -11,3 +11,6 @@ jobs:
         steps:
             - name: Show message
               run: echo "Hello world 2024-05-14"
+
+            - name: Show secret
+              run: echo ${{secrets.ENVIROMENT}}
